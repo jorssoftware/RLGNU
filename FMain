@@ -1,0 +1,366 @@
+' Gambas class file
+
+Public Sub _new()
+
+End
+
+Public Sub Form_Open()
+Timer1Hora.Start
+Timer2Fecha.Start
+ 
+' Label4Fecha.Caption = Time(Hour(18), Minute(33), Second(00))
+' Label3Hora.Text = Time(Hour(19), Minute(51), Second(30), Label4Fecha.Foreground = Color.Blue)
+End
+
+Public Sub Button18_Click()
+
+  Musicalizador.Show
+
+End
+
+Public Sub Button19_Click()
+
+  EventosYpublicidad.Show
+
+End
+
+Public Sub Button20_Click()
+
+  ConfiguraListaMusical.Show
+
+End
+
+Public Sub Button21_Click()
+
+  ConfigurarListaDeEventos.Show
+
+End
+
+Public Sub Button22_Click()
+
+  ConfiguraArranque.Show
+
+End
+
+Public Sub Button24_Click()
+
+  Dialog.OpenFile
+  TextBox1.Text = Dialog.Path
+
+End
+
+Public Sub Button25_Click()
+
+  Dialog.OpenFile
+  TextBox2.Text = Dialog.Path
+
+End
+
+Public Sub Button26_Click()
+
+  Dialog.OpenFile
+  TextBox3.Text = Dialog.Path
+
+End
+
+Public Sub Button27_Click()
+
+  Dialog.OpenFile
+  TextBox4.Text = Dialog.Path
+
+End
+
+Public Sub Button28_Click()
+
+  Dialog.OpenFile
+  TextBox5.Text = Dialog.Path
+
+End
+
+Public Sub Button29_Click()
+
+  Dialog.OpenFile
+  TextBox6.Text = Dialog.Path
+
+End
+
+Public Sub Button30_Click()
+
+  Dialog.OpenFile
+  TextBox7.Text = Dialog.Path
+
+End
+
+Public Sub Button31_Click()
+
+  Dialog.OpenFile
+  TextBox8.Text = Dialog.Path
+
+End
+
+Public Sub Button32_Click()
+
+  Dialog.OpenFile
+  TextBox9.Text = Dialog.Path
+
+End
+
+Public Sub Button33_Click()
+
+  Dialog.OpenFile
+  TextBox10.Text = Dialog.Path
+
+End
+
+Public Sub Button34_Click()
+
+  Dialog.OpenFile
+  TextBox11.Text = Dialog.Path
+
+End
+
+Public Sub Button35_Click()
+
+  Dialog.OpenFile
+  TextBox12.Text = Dialog.Path
+
+End
+
+Public Sub Button38_Click()
+
+  Dialog.OpenFile
+  TextBox13.Text = Dialog.Path
+
+End
+
+Public Sub Button39_Click()
+
+  Dialog.OpenFile
+  TextBox14.Text = Dialog.Path
+
+End
+
+Public Sub Button40_Click()
+
+  Dialog.OpenFile
+  TextBox15.Text = Dialog.Path
+
+End
+
+Public Sub Button41_Click()
+
+  Dialog.OpenFile
+  TextBox16.Text = Dialog.Path
+
+End
+
+Public Sub Button42_Click()
+
+  Dialog.OpenFile
+  TextBox17.Text = Dialog.Path
+
+End
+
+Public Sub Button43_Click()
+
+  Dialog.OpenFile
+  TextBox18.Text = Dialog.Path
+
+End
+
+Public Sub Button44_Click()
+
+  Dialog.OpenFile
+  TextBox19.Text = Dialog.Path
+
+End
+
+Public Sub Button45_Click()
+
+  Dialog.OpenFile
+  TextBox20.Text = Dialog.Path
+
+End
+
+Public Sub Button46_Click()
+
+  Dialog.OpenFile
+  TextBox21.Text = Dialog.Path
+
+End
+
+Public Sub Button47_Click()
+
+  Dialog.OpenFile
+  TextBox22.Text = Dialog.Path
+
+End
+
+Public Sub Button48_Click()
+
+  Dialog.OpenFile
+  TextBox23.Text = Dialog.Path
+
+End
+
+Public Sub Button49_Click()
+
+  Dialog.OpenFile
+  TextBox24.Text = Dialog.Path
+
+End
+
+Public Sub Button17_Click()
+
+  ayuditas.Show
+
+End
+
+Public Sub ToggleButton14_Click()
+ToggleButton14.Text = TextBox48.Text
+
+  If ToggleButton14.Value Then
+    ToggleButton14.Value = True
+    ToggleButton14.Background = Color.Green
+'     Music.Play(User.home & "/Música/Balada/Interpretes de Baladas/Alex Ubago/Alex Ubago..Fantasia o Realidad/01-Track 1 - Alex Ubago.ogg")
+    
+    Else
+      ToggleButton14.Value = False
+      ToggleButton14.Background = Color.Yellow
+  Endif
+  
+
+End
+
+Public Sub ToggleButton1_Click()
+
+  ToggleButton1.Text = TextBox25.Text
+
+End
+
+Public Sub ListView2_Click()
+
+ 
+'   TextBox24.Text = Dialog.Path
+  
+'   TextBox1.Text = ListBox1.Index
+  
+'    ListBox1.Add(TextBox2.Text, 3)
+
+End
+
+Public Sub Button36_Click()
+
+  ListView2.Add(TextBox1.Text, "")
+
+End
+
+Public Sub Timer1Hora_Timer()
+  Dim unnombre As String
+
+   Timer1Hora.Delay = 1000
+Label3Hora.Text = Time(Hour(Now), Minute(Now), Second(Now))
+
+ unnombre = "  Hora"
+Label3Hora.text = Label3Hora.Text & unnombre & ""
+
+
+' Label3Hora.Text = Time(Hour(19), Minute(50), Second(00), Label4Fecha.Foreground = Color.Blue)
+End
+
+Public Sub Label4Fecha_MouseDown()
+
+'   
+  
+   
+End
+
+Public Sub ToggleButton2_Click()
+
+  ToggleButton2.Text = TextBox26.Text
+
+End
+
+Public Sub ToggleButton3_Click()
+
+  ToggleButton3.Text = TextBox27.Text
+
+End
+
+Public Sub ToggleButton5_Click()
+
+  ToggleButton5.Text = TextBox28.Text
+
+End
+
+Public Sub ToggleButton6_Click()
+
+  ToggleButton6.Text = TextBox29.Text
+
+End
+
+Public Sub ToggleButton4_Click()
+
+  ToggleButton4.Text = TextBox30.Text
+
+End
+
+Public Sub ToggleButton8_Click()
+
+  ToggleButton8.Text = TextBox31.Text
+
+End
+
+Public Sub ToggleButton9_Click()
+
+  ToggleButton9.Text = TextBox32.Text
+
+End
+
+Public Sub ToggleButton7_Click()
+
+  ToggleButton7.Text = TextBox33.Text
+
+End
+
+Public Sub ToggleButton11_Click()
+
+  ToggleButton11.Text = TextBox34.Text
+
+End
+
+Public Sub ToggleButton12_Click()
+
+  ToggleButton12.Text = TextBox35.Text
+
+End
+
+Public Sub ToggleButton10_Click()
+
+  ToggleButton10.Text = TextBox36.Text
+
+End
+
+Public Sub Timer2Fecha_Timer()
+ Dim unnombrefecha As String
+
+Label4Fecha.Caption = Date
+
+ unnombrefecha = "  Fecha"
+Label4Fecha.text = Label4Fecha.Text & unnombrefecha & ""
+'    Timer2Fecha.Enabled = 10
+'  Label3Hora.Text = Date(Day(Now), Month(Now), Year(Now))
+' Label3Hora.Text = Time(Hour(Now), Minute(Now), Second(Now))
+End
+
+Public Sub Label3Hora_MouseDown()
+
+  
+
+End
+
+Public Sub Frame4_MouseDown()
+
+  
+
+End
